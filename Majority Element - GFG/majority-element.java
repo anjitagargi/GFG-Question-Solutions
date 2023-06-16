@@ -33,13 +33,13 @@ class Solution
 {
     static int majorityElement(int a[], int size)
     {
-    HashMap<Integer, Integer> mpp = new HashMap<>();
+    HashMap<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < size; i++) {
-            int value = mpp.getOrDefault(a[i], 0);
-            mpp.put(a[i], value + 1);
+            int value = map.getOrDefault(a[i], 0);
+            map.put(a[i], value + 1);
         }
             
-            for (Map.Entry<Integer, Integer> it : mpp.entrySet()) {
+            for (Map.Entry<Integer, Integer> it : map.entrySet()) {
             if (it.getValue() > (size / 2)) {
                 return it.getKey();
             }

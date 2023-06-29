@@ -29,13 +29,9 @@ class Solution {
        int oddbits = 0, evenbits = 0;
     for (int counter = 0; counter < s.length(); counter++)
     {
-       
-        // checking if the bit is nonzero
+     
         if (s.charAt(counter) == '1')
         {
-           
-            // checking if the nonzero bit is at even
-            // position
             if (counter % 2 == 0) {
                 evenbits++;
             }

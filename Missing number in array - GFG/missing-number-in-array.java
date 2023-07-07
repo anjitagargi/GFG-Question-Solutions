@@ -30,12 +30,12 @@ class GFG {
 class Solution {
     int missingNumber(int array[], int n) {
     
-       int sum_N = (n * (n + 1)) / 2;  // Step 1
+       int sum_N = (n * (n + 1)) / 2;  
 
-        for (int num : array) {  // Step 2
-            sum_N -= num;  // Step 3
+        for (int num : array) {  
+            sum_N -= num;  
         }
 
-        return sum_N;  // Step 4
+        return sum_N;  
     }
 }
